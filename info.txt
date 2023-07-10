@@ -13,3 +13,9 @@
 
 - Create new Django aplication:
     python manage.py startapp app_name
+
+- Start server in local host:
+    python manage.py runserver
+
+- Apply the migrations for apps:
+    python manage.py migrate
