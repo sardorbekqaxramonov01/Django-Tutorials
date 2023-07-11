@@ -20,10 +20,10 @@ def home(request):
         }
     </style>
 
-    <a href="about/">about</a>
-    <a href="project/">project</a>
-    <a href="my_blog/">my_blog</a>
-    <a href="contact/">contact</a>
+    <a href="/about">About</a>
+    <a href="/project">Project</a>
+    <a href="/my_blog">My_blog</a>
+    <a href="/contact">Contact</a>
     """
 )
 
@@ -45,10 +45,10 @@ def about(request):
         }
     </style>
 
-    <a href="home/">home</a>
-    <a href="project/">project</a>
-    <a href="my_blog/">my_blog</a>
-    <a href="contact/">contact</a>"""
+    <a href="/home">Home</a>
+    <a href="/project">Project</a>
+    <a href="/my_blog">My_blog</a>
+    <a href="/contact">Contact</a>"""
 )
 
 def project(request):
@@ -69,10 +69,10 @@ def project(request):
             margin:10px;
         }
     </style>
-    <a href="home/">Home</a>
-    <a href="about/">about</a>
-    <a href="my_blog/">my_blog</a>
-    <a href="contact/">contact</a>"""
+    <a href="/home">Home</a>
+    <a href="/about">About</a>
+    <a href="/my_blog">My_blog</a>
+    <a href="/contact">Contact</a>"""
 )
 
 def my_blog(request):
@@ -94,10 +94,10 @@ def my_blog(request):
         }
     </style>
                         
-    <a href="home/">home</a>
-    <a href="about/">about</a>
-    <a href="project/">project</a>
-    <a href="contact/">contact</a>"""
+    <a href="/home">Home</a>
+    <a href="/about">About</a>
+    <a href="/project">Project</a>
+    <a href="/contact">Contact</a>"""
 )
 
 def contact(request):
@@ -119,8 +119,8 @@ def contact(request):
         }
     </style>
 
-    <a href="home/">home</a>
-    <a href="about/">about</a>
-    <a href="my_blog/">my_blog</a>
-    <a href="project/">project</a>"""
+    <a href="/home">Home</a>
+    <a href="/about">About</a>
+    <a href="/my_blog">My_blog</a>
+    <a href="/project">Project</a>"""
 )
