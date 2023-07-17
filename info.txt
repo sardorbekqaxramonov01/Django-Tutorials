@@ -19,3 +19,6 @@
 
 - Apply the migrations for apps:
     python manage.py migrate
+
+- Create model:
+    python manage.py makemigrations my_blog
