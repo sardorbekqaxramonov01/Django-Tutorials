@@ -1,6 +1,16 @@
 {% extends "base.html"%}
+{%load static %}
 
 {% block  contact %}
-    <h1 class="text-center">Contact</h1>
+    ,<div class="container">
+        <h1 class="text-center">Contact</h1>
+        <img src={%static "images/Django.png"%} alt="error" class="django"/>
+        {% for e in data %}
+            <h4>{{e.location}}</h4>
+            <p>{{e.email}}</p>
+            <i>{{e.phone}}</i>
+            <p>{{e.name}}</p>
+        {% endfor %}
+    </div>
     
 {% endblock contact  %}

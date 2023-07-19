@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Contact
 
 def base(req):
     return render(req,"base.html")
@@ -16,4 +17,6 @@ def price_list(req):
     return render(req,"pages/price_list.html")
 
 def contact(req):
-    return render(req,"pages/contact.html")
+    data = Contact.objects.all
+    context = {"data":data}
+    return render(req,"pages/contact.html",context)

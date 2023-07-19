@@ -21,20 +21,19 @@
                 <div class="col-lg-6 col-12">
                     <h5 class="mb-3"><strong>Contact</strong> Information</h5>
 
-                    <p class="text-white d-flex mb-1">
-                        <a href="tel: 120-240-3600" class="site-footer-link">
-                            (+49) 
-                            120-240-3600
-                        </a>
-                    </p>
+                    {% for e in data %}
+                        <i>{{e.phone}}</i>
+                    {% endfor %}
 
                     <p class="text-white d-flex">
                         <a href="mailto:info@yourgmail.com" class="site-footer-link">
-                            hello@barber.beauty
+                            {% for e in data %}
+                                <p>{{e.email}}</p>
+                            {% endfor %}
                         </a>
                     </p>
 
-                    <ul class="social-icon">
+                    {% comment %} <ul class="social-icon">
                         <li class="social-icon-item">
                             <a href="#" class="social-icon-link bi-facebook">
                             </a>
@@ -59,6 +58,11 @@
                             <a href="#" class="social-icon-link bi-whatsapp">
                             </a>
                         </li>
+                    </ul> {% endcomment %}
+                    <ul class="social-icon">
+                        {% for i in data %}
+                            <h4>{{i.link}}</h4>
+                        {% endfor %}
                     </ul>
                 </div>
 
@@ -69,7 +73,9 @@
 
                             <strong>Open Daily</strong>
 
-                            <span class="ms-auto">10:00 AM - 8:00 PM</span>
+                            {% for e in data %}
+                                <span>{{e.open_time}}</span>
+                            {% endfor %}
                         </h6>
                     </div>
                 </div>

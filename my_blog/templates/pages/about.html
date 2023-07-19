@@ -1,6 +1,10 @@
 {% extends "base.html"%}
+{%load static %}
 
 {% block  about %}
-    <h1 class="text-center">About</h1>
+    <div class="container">
+        <h1 class="text-center">About</h1>
+        <img src={%static "images/Django.png"%} alt="error" class="django"/>
+    </div>
     
 {% endblock about  %}
