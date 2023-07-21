@@ -20,3 +20,8 @@ def contact(req):
     data = Contact.objects.all
     context = {"data":data}
     return render(req,"pages/contact.html",context)
+
+def base(req):
+    data = Contact.objects.all
+    context = {"data":data}
+    return render(req,"pages/base.html.html",context)

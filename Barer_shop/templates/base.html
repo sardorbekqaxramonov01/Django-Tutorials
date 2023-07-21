@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <title>Gentlemen's Barber Shop - HTML CSS Template</title>
     <!-- CSS FILES -->        
-    <link rel="website icon" type="svg" href="{% static 'images/django-icon.svg' %}">
+    <link rel="website icon" type="svg" href="{% static 'https://www.svgrepo.com/show/353657/django-icon.svg' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
@@ -124,24 +124,47 @@
 
                         <div class="col-lg-4 col-md-6 col-11">
                             <div class="site-footer-thumb">
-                                <strong class="mb-1">Grünberger</strong>
+                                <strong class="mb-1">
+                                    {% for e in data %}
+                                        {{e.branche}}
+                                    {% endfor %}
+                                </strong>
 
-                                <p>Grünberger Str. 31, 10245 Berlin, Germany</p>
+                                <p>{% for e in data %}
+                                    {{e.location}}
+                                {% endfor %}
+                            </p>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-11">
                             <div class="site-footer-thumb">
-                                <strong class="mb-1">Behrenstraße</strong>
+                                <strong class="mb-1">
+                                    {% for e in data %}
+                                        {{e.branche2}}
+                                    {% endfor %}
+                                </strong>
 
-                                <p>Behrenstraße 27, 10117 Berlin, Germany</p>
+                                <p>
+                                    {% for e in data %}
+                                        {{e.location2}}
+                                    {% endfor %}
+                                </p>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-11">
-                            <strong class="mb-1">Weinbergsweg</strong>
+                            <strong class="mb-1">
+                                {% for e in data %}
+                                    {{e.branche3}}
+                                {% endfor %}
+                            </strong>
 
-                            <p>Weinbergsweg 23, 10119 Berlin, Germany</p>
+                            <p>
+                                {% for e in data %}
+                                    {{e.location3}}
+                                {% endfor %}
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -6,3 +6,8 @@ class Contact(models.Model):
     phone = models.CharField(max_length=255)
     link = models.CharField(max_length=255)
     branche = models.CharField(max_length=255)
+    location = models.CharField(max_length=255)
+    branche2 = models.CharField(max_length=255)
+    location2 = models.CharField(max_length=255)
+    branche3 = models.CharField(max_length=255)
+    location3 = models.CharField(max_length=255)
