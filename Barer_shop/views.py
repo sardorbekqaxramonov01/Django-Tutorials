@@ -1,8 +1,5 @@
 from django.shortcuts import render
-from .models import Contact
-
-def base(req):
-    return render(req,"base.html")
+from .models import *
 
 def home(req):
     return render(req,"pages/home.html")
@@ -23,5 +20,7 @@ def contact(req):
 
 def base(req):
     data = Contact.objects.all
-    context = {"data":data}
-    return render(req,"pages/base.html.html",context)
+    date = Footer.objects.all
+    datta = Branches.objects.all
+    context = {"data":data,"data":date,"data":datta }
+    return render(req,"base.html",context)
