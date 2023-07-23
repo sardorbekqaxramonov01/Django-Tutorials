@@ -11,3 +11,11 @@ class Contact(models.Model):
     location2 = models.CharField(max_length=255)
     branche3 = models.CharField(max_length=255)
     location3 = models.CharField(max_length=255)
+
+class Footer(models.Model):
+    branche = models.CharField(max_length=255)
+    location = models.CharField(max_length=255)
+
+class Branches(models.Model):
+    branche = models.CharField(max_length=255)
+    location = models.CharField(max_length=255)
