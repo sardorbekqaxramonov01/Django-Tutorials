@@ -6,5 +6,6 @@ urlpatterns = [
     # path("", include("hello_world.urls")),
    
     # path('',include('my_blog.urls')),
-    path("",include("Barer_shop.urls")),
+    # path("",include("Barer_shop.urls")),
+    path("", include("drcare.urls"))
 ]
