@@ -1,3 +1,4 @@
+{% load static %}
 <nav class="navbar py-4 navbar-expand-lg ftco_navbar navbar-light bg-light flex-row">
     <div class="container">
         <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
@@ -31,13 +32,13 @@
       <p class="button-custom order-lg-last mb-0"><a href="appointment.html" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p>
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link pl-0">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="doctor.html" class="nav-link">Doctor</a></li>
-            <li class="nav-item"><a href="department.html" class="nav-link">Departments</a></li>
-            <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item active"><a href="{% url 'home' %}" class="nav-link pl-0">Home</a></li>
+            <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="{% url 'doctor' %}" class="nav-link">Doctor</a></li>
+            <li class="nav-item"><a href="{% url 'department' %}" class="nav-link">Departments</a></li>
+            <li class="nav-item"><a href="{% url 'pricing' %}" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>
