@@ -6,50 +6,19 @@
                 <h4 class="site-footer-title mb-4">Our Branches</h4>
             </div>
 
+            {% for e in branche %}
             <div class="col-lg-4 col-md-6 col-11">
                 <div class="site-footer-thumb">
                     <strong class="mb-1">
-                        {% for e in data %}
-                            {{e.branche}}
-                        {% endfor %}
+                        {{e.name}}
                     </strong>
-
-                    <p>{% for e in data %}
-                        {{e.location}}
-                    {% endfor %}
-                </p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-11">
-                <div class="site-footer-thumb">
-                    <strong class="mb-1">
-                        {% for i in data %}
-                            {{i.branche}}
-                        {% endfor %}
-                    </strong>
-
-                    <p>
-                        {% for i in data %}
-                            {{i.location}}
-                        {% endfor %}
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-11">
-                <strong class="mb-1">
-                    {% for o in data %}
-                        {{o.branche}}
-                    {% endfor %}
-                </strong>
 
                 <p>
-                    {% for o in data %}
-                        {{o.location}}
-                    {% endfor %}
+                    {{e.location}}
                 </p>
+                </div>
             </div>
+            {% endfor %}
         </div>
     </div>
 

@@ -21,13 +21,13 @@
                 <div class="col-lg-6 col-12">
                     <h5 class="mb-3"><strong>Contact</strong> Information</h5>
 
-                    {% for e in data %}
+                    {% for e in contact %}
                         <i>{{e.phone}}</i>
                     {% endfor %}
 
                     <p class="text-white d-flex">
                         <a href="mailto:info@yourgmail.com" class="site-footer-link">
-                            {% for e in data %}
+                            {% for e in contact %}
                                 <p>{{e.email}}</p>
                             {% endfor %}
                         </a>
@@ -60,7 +60,7 @@
                         </li>
                     </ul> {% endcomment %}
                     <ul class="social-icon">
-                        {% for i in data %}
+                        {% for i in contact %}
                             <h4>{{i.link}}</h4>
                         {% endfor %}
                     </ul>
@@ -73,7 +73,7 @@
 
                             <strong>Open Daily</strong>
 
-                            {% for e in data %}
+                            {% for e in contact %}
                                 <span>{{e.open_time}}</span>
                             {% endfor %}
                         </h6>
@@ -88,4 +88,5 @@
         </div>
     </div>
 </section>
+{% include "layouts/footer.html" %}
 {% endblock contact %}

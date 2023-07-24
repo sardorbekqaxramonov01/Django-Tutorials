@@ -2,25 +2,45 @@ from django.shortcuts import render
 from .models import *
 
 def home(req):
-    return render(req,"pages/home.html")
+    branche = Branche.objects.all()
+    context = {
+        "branche":branche
+        }
+    return render(req,"pages/home.html",context)
 
 def our_story(req):
-    return render(req,"pages/our_story.html")
+    branche = Branche.objects.all()
+    context = {
+        "branche":branche
+        }
+    return render(req,"pages/our_story.html",context)
 
 def service(req):
-    return render(req,"pages/service.html")
+    branche = Branche.objects.all()
+    context = {
+        "branche":branche
+        }
+    return render(req,"pages/service.html",context)
 
 def price_list(req):
-    return render(req,"pages/price_list.html")
+    branche = Branche.objects.all()
+    context = {
+        "branche":branche
+        }
+    return render(req,"pages/price_list.html",context)
 
 def contact(req):
-    data = Contact.objects.all
-    context = {"data":data}
+    contact = Contact.objects.all()
+    branche = Branche.objects.all()
+    context = {
+        "contact":contact,
+        "branche":branche,
+        }
     return render(req,"pages/contact.html",context)
 
 def base(req):
-    data = Contact.objects.all
-    date = Footer.objects.all
-    datta = Branches.objects.all
-    context = {"data":data,"data":date,"data":datta }
+    branche = Branche.objects.all()
+    context = {
+        "branche":branche
+        }
     return render(req,"base.html",context)
