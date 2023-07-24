@@ -13,6 +13,9 @@ def appointment(req):
 def blog(req):
     return render(req,"pages/blog.html",)
 
+def blog_singel(req):
+    return render(req,"pages/blog-singel.html",)
+
 def contact(req):
     return render(req,"pages/contact.html",)
 
