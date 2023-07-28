@@ -1,5 +1,15 @@
 from django.db import models
 
+
+class Barbers(models.Model):
+     Image = models.ImageField(upload_to="media")
+     name = models.CharField(max_length=255)
+
+class Service(models.Model):
+     Image = models.ImageField(upload_to="media")
+     Services = models.CharField(max_length=255)
+     Price = models.FloatField(max_length=6)
+
 class Price(models.Model):
      photo = models.ImageField(upload_to="media")
      starting = models.FloatField(max_length=6)

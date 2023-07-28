@@ -10,15 +10,19 @@ def home(req):
 
 def our_story(req):
     branche = Branche.objects.all()
+    barber = Barbers.objects.all()
     context = {
-        "branche":branche
+        "branche":branche,
+        "barber":barber
         }
     return render(req,"pages/our_story.html",context)
 
 def service(req):
     branche = Branche.objects.all()
+    service = Service.objects.all()
     context = {
-        "branche":branche
+        "branche":branche,
+        "service":service,
         }
     return render(req,"pages/service.html",context)
 
