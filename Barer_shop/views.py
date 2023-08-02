@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import *
+from django.views.generic import View
 
 def home(req):
     branche = Branche.objects.all()
@@ -35,14 +36,14 @@ def price_list(req):
         }
     return render(req,"pages/price_list.html",context)
 
-def contact(req):
-    contact = Contact.objects.all()
-    branche = Branche.objects.all()
-    context = {
-        "contact":contact,
-        "branche":branche,
-        }
-    return render(req,"pages/contact.html",context)
+# def contact(req):
+#     contact = Contact.objects.all()
+#     branche = Branche.objects.all()
+#     context = {
+#         "contact":contact,
+#         "branche":branche,
+#         }
+#     return render(req,"pages/contact.html",context)
 
 def base(req):
     branche = Branche.objects.all()
@@ -50,3 +51,7 @@ def base(req):
         "branche":branche
         }
     return render(req,"base.html",context)
+
+
+class ContactView(View):
+    template_name = 'pages/contact.html'
