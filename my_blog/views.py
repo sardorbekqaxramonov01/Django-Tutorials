@@ -1,6 +1,8 @@
+from typing import Any, Dict
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 
-from .models import Contact
+from .models import *
 
 
 def home(req):
@@ -12,8 +14,18 @@ def about(req):
 def project(req):
     return render(req,"pages/project.html",)
 
-def my_blog(req):
-    return render(req,"pages/my_blog.html",)
+class BlogPageView(ListView):
+    model = Blog
+    template_name = "pages/blog.html"
+    def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context["blog"] = Blog.objects.all()
+        return context
+    
+class BlogSingleView(DetailView):
+    model = Blog
+    template_name = "pages/blog_single.html"
+    
 
 def contact(req):
     data = Contact.objects.all

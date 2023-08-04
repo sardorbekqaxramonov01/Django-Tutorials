@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+{%load static %}
+
+{% block  blog %}
+    <div class="container">
+        <h1>My blog page</h1>
+        <hr>
+
+        {% for i in blog %}
+            <h1>{{i.id}}<a href="{{i.id}}">{{i.title}}</a></h1>
+            <p>{{i.description}}</p>
+        {% endfor %}
+    </div>
+    
+{% endblock blog  %}

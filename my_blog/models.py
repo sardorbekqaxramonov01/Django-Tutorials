@@ -6,3 +6,7 @@ class Contact(models.Model):
     phone = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
 
+class Blog(models.Model):
+    title = models.CharField(max_length=255, unique=True)
+    description = models.TextField()
+

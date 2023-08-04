@@ -1,0 +1,12 @@
+{% extends "base.html"%}
+{%load static %}
+
+{% block  blog %}
+    <div class="container">
+        <h1>My blog page</h1>
+        <hr>
+            <h1>{{object.title}}</h1>
+            <p>{{object.description}}</p>
+    </div>
+    
+{% endblock blog  %}

@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'my_blog.apps.MyBlogConfig',
-    'Barer_shop.apps.BarerShopConfig',
+    'my_blog.apps.MyBlogConfig',
+    # 'Barer_shop.apps.BarerShopConfig',
     # 'drcare.apps.DrcareConfig',
 ]
 

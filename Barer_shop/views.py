@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import *
-from django.views.generic import View
+from django.views.generic import TemplateView
 
 def home(req):
     branche = Branche.objects.all()
@@ -53,5 +53,5 @@ def base(req):
     return render(req,"base.html",context)
 
 
-class ContactView(View):
+class ContactView(TemplateView):
     template_name = 'pages/contact.html'

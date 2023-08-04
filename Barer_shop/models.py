@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Barbers(models.Model):
+class Barber(models.Model):
      Image = models.ImageField(upload_to="media")
      name = models.CharField(max_length=255)
 
