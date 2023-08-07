@@ -19,7 +19,7 @@ class BlogPageView(ListView):
     template_name = "pages/blog.html"
     def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
         context = super().get_context_data(**kwargs)
-        context["blog"] = Blog.objects.all()
+        context["Blog"] = Blog.objects.all()
         return context
     
 class BlogSingleView(DetailView):

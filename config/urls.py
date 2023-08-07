@@ -9,5 +9,5 @@ urlpatterns = [
     # path("", include("hello_world.urls")),
     path('',include('my_blog.urls')),
     # path("",include("Barer_shop.urls")),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

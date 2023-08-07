@@ -5,8 +5,10 @@
     <div class="container">
         <h1>My blog page</h1>
         <hr>
-            <h1>{{object.title}}</h1>
-            <p>{{object.description}}</p>
+        {% for i in Blog %}
+            <h1><i>{{i.id}}</i>{{i.title}}</h1>
+            <p>{{i.description}}</p>
+        {% endfor %}
     </div>
     
 {% endblock blog  %}

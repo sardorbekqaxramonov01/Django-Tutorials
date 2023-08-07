@@ -5,8 +5,7 @@
     <div class="container">
         <h1>My blog page</h1>
         <hr>
-
-        {% for i in blog %}
+        {% for i in Blog %}
             <h1>{{i.id}}<a href="{{i.id}}">{{i.title}}</a></h1>
             <p>{{i.description}}</p>
         {% endfor %}
