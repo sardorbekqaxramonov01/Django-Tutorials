@@ -22,3 +22,33 @@
 
 - Create model:
     python manage.py makemigrations my_blog
+
+
+
+
+
+Tabii, Python dasturlash tili hammasi uchun mashhur bo'lgan bir tillardan biri. Bu dasturlash tilida kod yozish juda oson va saqlanuvchi. Manga Python haqida qiziqish tugaganiga xursandman. 
+
+Python tilida dastur yozish uchun quyidagi tartibni amalga oshiring:
+
+1. Python o'rnatish: Python tilida dastur yozish uchun, python.org saytidan Python dasturlash tili o'rnatilishi kerak. O'rnatish jarayoni oson va to'liq o'rganish uchun veb saytning "Downloads" bo'limida qo'llanmalar mavjud.
+
+2. Text editorni tanlash: Python kodini yozish uchun tekst muharriri tanlashingiz kerak. Bu sizning iste'fongizga bog'liq bo'lgan bir muddatda oxirgina versiyalarini yuklab olishingiz mumkin. Bir nechta mashhur muharrir variantlari PyCharm, Visual Studio Code, Sublime Text, Atom va Notepad++ dan iborat.
+
+3. Python skriptini yaratish: Text muharrirni ochganingizdan so'ng, yangi fayl yaratish uchun "File" -> "New File" bosishing. Keyin, yaratgan faylning `.py` kengaytmasiga ega bo'lishi kerak. Misol uchun, `menga_salom.py` deb nomlangan faylni yarating.
+
+4. Kodingizni yozing: Quyidagi kod orqali `menga_salom.py` fayliga "Salom, dunyo!" deb yozing:
+
+```python
+print("Salom, dunyo!")
+```
+
+5. Kodni ishga tushiring: Dasturning o'zi yaratilgan `.py` faylni tanlash uchun Terminalni oching va quyidagi buyruqni yozing:
+
+```bash
+python menga_salom.py
+```
+
+Natijada "Salom, dunyo!" so'zini ko'rishingiz kerak.
+
+Bu asosiy qadamlar bilan siz Python tilida dastur yozishni boshlay olasiz. Boshlang'ich dasturlash o'rganish uchun Python dasturlash tiliga oid ko'p yordamchi resurslar mavjud, masalan, Python.org da yoki online platformalarda darslar va mashg'ulotlar bilan. Sabrli bo'ling, amaliyotlar ko'payadi va siz har kuni rivojlanasiz. Agar savollar bo'lsa, menga yozing!
