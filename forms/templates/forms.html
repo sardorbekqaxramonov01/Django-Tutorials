@@ -10,7 +10,7 @@
     </form> {% endcomment %}
     <form action="" method="POST">
         {% csrf_token %}
-        {{ forms }}
+        {{ form }}
         <input type="submit" value="Submit">
     </form>
 {% endblock forms %}

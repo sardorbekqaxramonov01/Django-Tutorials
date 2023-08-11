@@ -9,9 +9,10 @@ def main(req):
 def forms(req):
     if req.method == "POST":
         form = MyForm(req.POST)
+        
         if form.is_valid():
             return HttpResponseRedirect("")
         else:
             form = MyForm()
 
-    return render(req,"forms.html",context={"form":forms})
+    return render(req,"forms.html",context={"form":form})
