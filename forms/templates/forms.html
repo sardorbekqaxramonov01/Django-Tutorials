@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block forms %}
+    {% comment %} <form action="" method="POST">
+        {% csrf_token %}
+
+        <label for="your_name">Your name: </label>
+        <input id="your_name" type="text" name="your_name" value="{{ current_name }}" required>
+        <input type="submit" value="OK">
+    </form> {% endcomment %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ forms }}
+        <input type="submit" value="Submit">
+    </form>
+{% endblock forms %}
