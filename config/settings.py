@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     # 'my_blog.apps.MyBlogConfig',
     # 'Barer_shop.apps.BarerShopConfig',
     # 'drcare.apps.DrcareConfig',
-    #'models.apps.ModelsConfig',
-    'forms.apps.FormsConfig',
+    'models.apps.ModelsConfig',
+    # 'forms.apps.FormsConfig',
     # 'todo.apps.TodoConfig'
 ]
 

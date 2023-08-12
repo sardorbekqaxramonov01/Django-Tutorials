@@ -11,7 +11,7 @@ def home(req):
 
 def our_story(req):
     branche = Branche.objects.all()
-    barber = Barbers.objects.all()
+    barber = Barber.objects.all()
     context = {
         "branche":branche,
         "barber":barber
