@@ -38,12 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'paginator.apps.PaginatorConfig',
     # 'my_blog.apps.MyBlogConfig',
     # 'Barer_shop.apps.BarerShopConfig',
     # 'drcare.apps.DrcareConfig',
-    'models.apps.ModelsConfig',
+    # 'models.apps.ModelsConfig',
     # 'forms.apps.FormsConfig',
-    # 'todo.apps.TodoConfig'
+    # 'todo.apps.TodoConfig',
 ]
 
 MIDDLEWARE = [
