@@ -12,7 +12,8 @@ urlpatterns = [
     # path("", include("my_blog.urls")),
     # path("", include("Barer_shop.urls")),
     # path("", include("forms.urls")),
-    # path("", include("todo.urls"))
-    path("", include("users.urls"))
+    # path("", include("todo.urls")),
+    # path("", include("users.urls")),
+    path("",include("file.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

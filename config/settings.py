@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -45,7 +46,8 @@ INSTALLED_APPS = [
     # 'models.apps.ModelsConfig',
     # 'forms.apps.FormsConfig',
     # 'todo.apps.TodoConfig',
-    'users.apps.UsersConfig',
+    # 'users.apps.UsersConfig',
+    'file.apps.FileConfig'
 ]
 
 MIDDLEWARE = [
@@ -132,8 +134,9 @@ STATICFILE_DIRS= [
 
 STATIC_ROOT = "/var/www/example.com/static/"
 
-MEDIA_ROOT  = BASE_DIR / 'media/'
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Default primary key field type
