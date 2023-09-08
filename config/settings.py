@@ -38,14 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'paginator.apps.PaginatorConfig',
+    # 'paginator.apps.PaginatorConfig',
     # 'my_blog.apps.MyBlogConfig',
     # 'Barer_shop.apps.BarerShopConfig',
     # 'drcare.apps.DrcareConfig',
     # 'models.apps.ModelsConfig',
     # 'forms.apps.FormsConfig',
     # 'todo.apps.TodoConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -90,7 +90,7 @@ DATABASES = {
     }
 }
 
-
+# AUTH_USER_MODEL = 'custom_user'
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 

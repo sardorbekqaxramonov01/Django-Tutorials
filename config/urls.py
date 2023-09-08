@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("paginator.urls")),
+    # path("", include("paginator.urls")),
     # path("", include("models.urls")),
     # path("", include("drcare.urls")),
     # path("", include("hello_world.urls")),
@@ -13,5 +13,6 @@ urlpatterns = [
     # path("", include("Barer_shop.urls")),
     # path("", include("forms.urls")),
     # path("", include("todo.urls"))
+    path("", include("users.urls"))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
