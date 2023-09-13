@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     # 'forms.apps.FormsConfig',
     # 'todo.apps.TodoConfig',
     # 'users.apps.UsersConfig',
-    'file.apps.FileConfig'
+    'file.apps.FileConfig',
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
@@ -136,7 +137,7 @@ STATIC_ROOT = "/var/www/example.com/static/"
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
 # Default primary key field type

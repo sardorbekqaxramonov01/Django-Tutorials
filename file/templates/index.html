@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    {% for i in post %}
+    {% for i in car %}
         <div>Car name:{{i.name}}</div>
         <h1>Car price:{{i.price}}</h1>
-        <h2>Car photo:{{i.photo.url}}</h2>
-        <h3>{{i.specs.url}}</h3>
+        <img src="{{i.photo.url}}"/>
+        <a href="{{i.specs.url}}"download>Download more info</a>
     {% endfor %}
 </body>
 </html>
